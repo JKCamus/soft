@@ -22,9 +22,7 @@ function App() {
     <div className="App">
       <CardWrapper>
         <Card style={{ width: "33vw", height: "75vh" }}>
-          <header className="App-header">
-            <p>预测最高温度有效值为1500摄氏度</p>
-          </header>
+
           <div className="inner">
             <div>
               <Routes>
@@ -34,6 +32,7 @@ function App() {
               </Routes>
             </div>
           </div>
+
           <div className="radioGroupCls">
             <Radio.Group value={mode} onChange={(e) => setMode(e.target.value)}>
               <Radio.Button onClick={handleCommon} value="common">
