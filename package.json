@@ -11,6 +11,7 @@
     "@types/node": "^16.18.3",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
+    "ahooks": "^3.7.2",
     "antd": "^4.24.1",
     "babel-plugin-styled-components": "^2.0.7",
     "cache-loader": "^4.1.0",

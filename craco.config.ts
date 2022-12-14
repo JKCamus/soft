@@ -33,7 +33,7 @@ module.exports = {
       store: resolve("src/store"),
       utils: resolve("src/utils"),
     },
-
+    devtool:'source-map',
     configure: {
       /*在这里添加任何webpack配置选项: https://webpack.js.org/configuration */
       module: {

@@ -1,13 +1,19 @@
 import { Button, Card, Radio } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import Common from "./common";
 import Profession from "./profession";
 import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
+import Login from "./login";
 
 function App() {
   const [mode, setMode] = useState("common");
+
+  useEffect(() => {
+   navigate('/common')
+  }, [])
+
 
   let navigate = useNavigate();
 
@@ -20,9 +26,12 @@ function App() {
 
   return (
     <div className="App">
-      <CardWrapper>
-        <Card style={{ width: "33vw", height: "75vh" }}>
+      <Routes>
+        <Route path="login" element={<Login />} />
+      </Routes>
 
+      <CardWrapper>
+        <Card style={{ width: "95vw", height: "95vh" }}>
           <div className="inner">
             <div>
               <Routes>
