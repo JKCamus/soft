@@ -17,7 +17,7 @@ const navigate=useNavigate()
   const handleLogin=()=>{
     const [rightName,rightPassword]=['userName','123456']
     if (rightName===name&&rightPassword===password) {
-      navigate('./common')
+      navigate('/common')
     }
   }
   return (

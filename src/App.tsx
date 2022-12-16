@@ -11,7 +11,7 @@ function App() {
   const [mode, setMode] = useState("common");
 
   useEffect(() => {
-   navigate('/common')
+   navigate('/login')
   }, [])
 
 
@@ -37,7 +37,7 @@ function App() {
               <Routes>
                 <Route path="profession" element={<Profession />} />
                 <Route path="common" element={<Common />} />
-                <Route path="/" element={<Navigate to="/common" />} />
+                <Route path="/" element={<Navigate to="/login" />} />
               </Routes>
             </div>
           </div>

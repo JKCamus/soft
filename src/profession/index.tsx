@@ -188,7 +188,7 @@ const Profession: React.FC = (props) => {
           })}
         </div>
 
-        <Form.Item labelCol={{ span: -4 }} label={"软化温度"}>
+        <Form.Item labelCol={{ span: -4 }} label={"结渣趋势预测"}>
           <InputNumber
             style={{ width: "144px" }}
             value={slag}
